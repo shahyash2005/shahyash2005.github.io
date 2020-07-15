@@ -10,6 +10,9 @@
     $headers = 'MIME-Version: 1.0' . "\r\n";
     $headers .= "From: " . $email . "\r\n"; // Sender's E-mail
     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+    
+    
+    mail($to, $email, $message, $headers);
 
     $message ='<table style="width:100%">
         <tr>
